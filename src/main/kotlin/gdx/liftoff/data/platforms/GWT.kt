@@ -251,6 +251,10 @@ gwt {
 //  compiler.style = org.docstr.gradle.plugins.gwt.Style.DETAILED
 ${if (project.advanced.gwtVersion == "2.10.0" || project.advanced.gwtVersion == "2.11.0") "\n  sourceLevel = 1.11\n" else ""}}
 
+war {
+  archiveVersion = projectVersion
+}
+
 dependencies {
 ${joinDependencies(dependencies)}
 }
